@@ -4,6 +4,7 @@ var app = (function() {
 
   function init() {
     document.addEventListener('deviceready', function() {
+      alert('deviceready');
       // FirebaseSimpleLogin demo instantiation
       var firebaseRef = new Firebase('https://ticket-tracker.firebaseio.com/');
       auth = new FirebaseSimpleLogin(firebaseRef, function(error, user) {
